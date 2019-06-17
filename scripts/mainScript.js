@@ -14,6 +14,7 @@ function init(){
     playAudio();
     document.onmousemove = mouseMoved;
     buttonStartElement.style.display = "none";
+    hideControls ()
 }
 function playAudio(){    
     var audio = new Audio("./assets/sounds/fox.mp3");
@@ -55,4 +56,9 @@ function win(){
     won = true;
     foxElement.classList.add("animate-fox");
     //alert("What does the fox say?")
+}
+function hideControls (){
+   var controls = document.getElementsByClassName("inicio");
+    for (var x = 0; x < controls.length; x++)
+        controls[x].style.display = "none"
 }

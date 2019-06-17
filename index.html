@@ -3,36 +3,29 @@
     <head>
         <title> Find The Fox</title>
         <link rel= "shortcut icon" type="image/x-icon" href="assets/images/fox (2).png"/>
-        <style>
-            body{
-                overflow: hidden;
-            }
-            img {
-                opacity: 0;
-                
-                
-            }
-            .animate-fox {
-                transition: width 2s, height 4s, position 3s;
-                position: absolute;
-                margin-left: 50% !important;
-                margin-top: 40% !important;
-                transform: translate(-50%, -50%);
-                width: 300px;
-                height: 300px;
-            }
-        
-        </style>
+        <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
+      
     </head>
     <body>
-             <img src="./assets/images/fox.png" width="90px" height="110px" alt="fox-image" id="fox" 
-             onclick="win()"
-             
-             />
+        <div class="menuWrapper">
+            <div class="inicio">
+                <h1 id="titulo">Find the invisible fox</h1>
+                <p>Move the mouse around the screen to find the fox. It's hidden behind the loudest scream</p>
+                <div class="som">
+                        <h2 id="butao">turn on the sound before you start</h2>
+                        <img id="volume" src="assets/images/speaker.png"alt="speaker" width="60" height="60">
+            </div>
+            
+            
+            </div>
+            <button id="button-start" onclick="init()">Start</button>
+        </div>
+        <img  id="fox" src="./assets/images/fox.png" width="90px" height="110px" alt="fox-image" id="fox" 
+             onclick="win()"/>
+        <script src="./scripts/mainScript.js"></script>
+       
         
        
-        <button id="button-start" onclick="init()">Find the invisible fox!</button>
-        <script src="./scripts/mainScript.js"></script>
     </body>
 
 
