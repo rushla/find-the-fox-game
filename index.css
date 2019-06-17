@@ -20,7 +20,7 @@ body{
      width: 34vw;
      display: flex;
      flex-direction: column;
-     padding: 1%;
+    
      font-family: monospace;
      text-align: center;
      margin-top: 10%;
@@ -45,7 +45,8 @@ h2::before{
 #butao{
     float: right;
     margin-left: -30px;
-    padding: 0%;
+    padding: 2%;
+   
    
 }
 #button-start{
